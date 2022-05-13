@@ -1,7 +1,10 @@
 <template>
   <div class="home">
+    <!-- 疫情图片 -->
     <img class="top_img" src="https://img1.dxycdn.com/2020/0314/863/3401956761707181858-2.png" alt="">
-    <covinfo></covinfo>
+    <!-- 疫情热点 -->
+    <covinfo :news="news"></covinfo>
+    
   </div>
 </template>
 
@@ -20,6 +23,7 @@ export default {
   data(){
     return {
       data:{},
+      news:[],
     }
   },
   created(){
@@ -33,6 +37,7 @@ export default {
     getHomemultidata(){
       getHomemultidata().then(res => {
         this.data = res
+        this.news = res.newslist[0].news
         console.log(this.data)
       })
     }
