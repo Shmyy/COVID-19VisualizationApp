@@ -47,6 +47,7 @@ export default {
 
 
 <style scoped>
+
 .top_img{
   width: 100%;
 }

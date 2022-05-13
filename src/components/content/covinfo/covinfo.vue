@@ -19,7 +19,7 @@
 </template>
 
 <script>
-    import Help from 'components/content/help.vue'
+    import Help from 'components/content/covinfo/help.vue'
     export default {
         name: 'Covinfo',
         components:{
@@ -39,7 +39,7 @@
 <style lang="less" scoped>
 .info{
     padding: 0.2rem;
-    // border-bottom: 0.01rem solid #333;
+    border-bottom: 0.35rem solid #f7f7f7;
     .hot_topic_img1{
         width: 1.4rem;
         border-left: 0.1rem solid #007aff;
@@ -62,8 +62,10 @@
             justify-content: space-between;
             span{
                 display: inline-block;
-                width: 5.9rem;
-                text-align-last: justify;
+                width: 6.1rem;
+            }
+            .right{
+                color: #d3d3d3;
             }
         }
     }

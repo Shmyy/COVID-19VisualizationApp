@@ -30,12 +30,15 @@
 .help{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     div{
-        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0.35rem;
     }
     img{
-        width: 1rem;
+        width: 0.9rem;
     }
 }
 </style>
