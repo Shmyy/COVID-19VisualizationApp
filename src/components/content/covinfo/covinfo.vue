@@ -14,12 +14,17 @@
                 </li>
             </ul>
         </div>
+        <help></help>
     </div>
 </template>
 
 <script>
+    import Help from 'components/content/help.vue'
     export default {
         name: 'Covinfo',
+        components:{
+            Help
+        },
         props:{
             news:{
                 type:Array,
@@ -34,7 +39,7 @@
 <style lang="less" scoped>
 .info{
     padding: 0.2rem;
-    border-bottom: 0.04rem solid #333;
+    // border-bottom: 0.01rem solid #333;
     .hot_topic_img1{
         width: 1.4rem;
         border-left: 0.1rem solid #007aff;
