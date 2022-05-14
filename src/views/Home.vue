@@ -5,7 +5,11 @@
     <!-- 疫情热点 -->
     <covinfo :news="news"></covinfo>
     <!-- 地区疫情 -->
-    <riskyarea></riskyarea>
+    <riskyarea
+      :higharea="higharea"
+      :midarea="midarea"
+      >
+    </riskyarea>
   </div>
 </template>
 
@@ -29,6 +33,8 @@ export default {
     return {
       data:{},
       news:[],
+      higharea:[],
+      midarea:[],
     }
   },
   created(){
@@ -43,6 +49,8 @@ export default {
       getHomemultidata().then(res => {
         this.data = res
         this.news = res.newslist[0].news
+        this.higharea = res.newslist[0].riskarea.high
+        this.midarea = res.newslist[0].riskarea.mid
         console.log(this.data)
       })
     }

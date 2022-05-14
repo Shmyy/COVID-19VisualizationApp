@@ -36,7 +36,7 @@
         
         border-radius: 0.35rem 0.35rem 0 0;
         .navbaritem{
-            height: 0.9rem;
+            height: 1rem;
 
             display: flex;
             align-items: center;
