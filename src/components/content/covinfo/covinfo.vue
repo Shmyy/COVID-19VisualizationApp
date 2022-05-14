@@ -7,7 +7,7 @@
             <ul>
                 <li v-for="item in news" :key="item.id">
                     <img class="hot_topic_img2" src="~assets/img/news.png" alt="">
-                    <a href="">
+                    <a :href="item.sourceUrl">
                         <span class="left">{{item.title}}</span>
                         <span class="right">></span>
                     </a>
